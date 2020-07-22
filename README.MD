@@ -3,4 +3,7 @@ This is a homework assignment to teach you how to get Pycharm setup with Docker,
 
 
 ### Postman Screenshot
-![postman request output](screenshots/postman.png)
+![postman request output](screenshots/scre.PNG)
+
+### DB screenshots 
+![db screenshots](screenshots/query.PNG)
