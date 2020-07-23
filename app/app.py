@@ -4,7 +4,7 @@ import simplejson as json
 from flask import Flask, Response
 from flask import render_template
 
-app = Flask(__name__)
+app = Flask(__name__, instance_relative_config=True)
 
 
 def cities_import() -> List[Dict]:
@@ -29,7 +29,7 @@ def cities_import() -> List[Dict]:
 
 @app.route('/')
 def index():
-    user = {'username': 'Ianl'}
+    user = {'username': 'Ian'}
     cities_data = cities_import()
 
     return render_template('index.html', title='Home', user=user, cities=cities_data)
